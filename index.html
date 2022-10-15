@@ -76,7 +76,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -145,6 +145,7 @@
           <ul class="list works-list">
             <li class="works-item">
               <img src="./images/web.jpg" alt="Людина пише код" width="370" />
+               <h3 class="works-description">Десктопні додатки</h3>
             </li>
             <li class="works-item">
               <img
@@ -152,6 +153,7 @@
                 alt="Людина створює мобільну версію сайту"
                 width="370"
               />
+              <h3 class="works-description">Мобільні додатки</h3>
             </li>
             <li class="works-item">
               <img
@@ -159,6 +161,7 @@
                 alt="Людина розробляє дизайн"
                 width="370"
               />
+               <h3 class="works-description">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -408,9 +411,19 @@
                 </svg>
               </li>
               </ul>
-          </div>
+                        </div>
         </address>
       </div>
     </footer>
+<div class="modal-backdrop is-hidden" data-modal>
+  <div class="modal-window">
+    <button type="button" class="escape-button" data-modal-close >
+       <svg>
+      <use href="./images/svg/inline.svg#icon-escape"></use>
+    </svg></button>
+    </div>
+</div>
+
+ <script src="./javascript/modal.js"></script>
   </body>
 </html>
