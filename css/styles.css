@@ -48,6 +48,11 @@ p {
   width: 1200px;
 }
 
+section.section {
+  padding-top: var(--primal-margin);
+  padding-bottom: var(--primal-margin);
+}
+
 .list {
   padding: 0;
   margin-bottom: 0;
@@ -73,6 +78,15 @@ img {
   fill: currentColor;
   width: 20px;
   height: 20px;
+}
+.futer-box > a,
+.team-box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: inherit;
 }
 
 /* **Header** */
@@ -397,11 +411,10 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
   color: #afb1b8;
 }
+
 .team-box:hover,
 .team-box:focus {
   background-color: var(--alt-text-color);
@@ -557,6 +570,11 @@ img {
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
+.down .container {
+  display: flex;
+  align-items: center;
+}
+
 .down .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -579,17 +597,11 @@ img {
   margin-bottom: 9px;
 }
 
-section.section {
-  padding-top: var(--primal-margin);
-  padding-bottom: var(--primal-margin);
-}
-
 .conect-box {
   margin-left: 70px;
   /* margin-top: 12px; - если не использовать 
   центрирование по вертикали */
 }
-
 .conect {
   margin-top: 0;
   margin-bottom: 20px;
@@ -604,11 +616,6 @@ section.section {
   justify-content: center;
 }
 .futer-box {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
   color: var(--background-color);
   background-color: rgba(255, 255, 255, 0.1);
@@ -617,10 +624,7 @@ section.section {
 .futer-box:focus {
   background-color: var(--alt-text-color);
 }
-.down .container {
-  display: flex;
-  align-items: center;
-}
+
 /* .team-icon:hover,
 .team-icon:focus {
   fill: currentColor
